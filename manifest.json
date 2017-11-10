@@ -1,0 +1,33 @@
+{
+  "name": "shortcuts manager",
+  "version": "1.0",
+  "description": "Allows keyboard shortcuts.",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["controller.js"],
+    "persistent": false
+  },
+  "icons": {
+    "16":  "imgs/16.png",
+    "48":  "imgs/48.png",
+    "128": "imgs/128.png" 
+  },  
+  "commands": {
+    "tab_manager_move_left": {
+      "suggested_key": {
+        "default": "Alt+Left",
+        "linux":   "Alt+Left",
+        "windows": "Alt+Left"
+      },
+      "description": "Switch tab left."
+    },
+    "tab_manager_move_right": {
+      "suggested_key": {
+        "default": "Alt+Right",
+        "linux":   "Alt+Right",
+        "windows": "Alt+Right"
+      },
+      "description": "Switch tab right"
+    }
+  }
+}
