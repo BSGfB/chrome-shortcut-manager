@@ -13,7 +13,7 @@
     "128": "imgs/128.png" 
   },  
   "commands": {
-    "tab_manager_move_left": {
+    "switch_tab_left": {
       "suggested_key": {
         "default": "Alt+Left",
         "linux":   "Alt+Left",
@@ -21,13 +21,24 @@
       },
       "description": "Switch tab left."
     },
-    "tab_manager_move_right": {
+    "switch_tab_right": {
       "suggested_key": {
         "default": "Alt+Right",
         "linux":   "Alt+Right",
         "windows": "Alt+Right"
       },
       "description": "Switch tab right"
+    },
+    "duplicate_tab": {
+        "suggested_key": {
+            "default": "Alt+D",
+            "linux":   "Alt+D",
+            "windows": "Alt+D"
+        },
+        "description": "Duplicate tab"
+    },
+    "pin_unpin_tab": {
+        "description": "Pin unpin tab"
     }
   }
 }
