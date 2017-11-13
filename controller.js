@@ -41,5 +41,17 @@ chrome.commands.onCommand.addListener(function(command) {
             chrome.tabs.query({active: true, lastFocusedWindow: true}, 
                               tab => chrome.tabs.update(tab[0].id, {pinned: !tab[0].pinned}))
             break
+        case 'yandex_music_play_stop':
+            chrome.tabs.query({url: '*://music.yandex.ru/*'}, tabs => {
+                let request = "document.getElementsByClassName('player-controls__btn player-controls__btn_play')[0].click()"
+                chrome.tabs.executeScript(tabs[0].id, {code: request, runAt:"document_end"})
+            })
+            break
+        case 'yandex_music_next':
+            chrome.tabs.query({url: '*://music.yandex.ru/*'}, tabs => {
+                let request = "document.getElementsByClassName('player-controls__btn player-controls__btn_next')[0].click()"
+                chrome.tabs.executeScript(tabs[0].id, {code: request, runAt:"document_end"})
+            })
+            break
     }
 })

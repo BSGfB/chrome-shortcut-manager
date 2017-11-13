@@ -12,6 +12,10 @@
     "48":  "imgs/48.png",
     "128": "imgs/128.png" 
   },  
+  "permissions": [
+    "tabs",
+    "https://music.yandex.ru/*"
+  ],
   "commands": {
     "switch_tab_left": {
       "suggested_key": {
@@ -39,6 +43,12 @@
     },
     "pin_unpin_tab": {
         "description": "Pin unpin tab"
+    },
+    "yandex_music_play_stop": {
+        "description": "Yandex music play stop"
+    },
+    "yandex_music_next": {
+        "description": "Yandex music next"
     }
   }
 }
