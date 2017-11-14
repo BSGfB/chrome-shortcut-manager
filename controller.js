@@ -31,7 +31,7 @@ chrome.commands.onCommand.addListener(function(command) {
                 if (newIndex >= 0)
                     activateTabByIndex(newIndex)
                 else
-                    chrome.tabs.query({}, tabs => activateTabByIndex(tabs.length - 1))
+                    chrome.tabs.query({lastFocusedWindow: true}, tabs => activateTabByIndex(tabs.length - 1))
             })
             break
         case 'duplicate_tab':
