@@ -14,7 +14,8 @@
   },  
   "permissions": [
     "tabs",
-    "https://music.yandex.ru/*"
+    "https://music.yandex.ru/*",
+    "https://vk.com/*"
   ],
   "commands": {
     "switch_tab_left": {
@@ -49,6 +50,15 @@
     },
     "yandex_music_next": {
         "description": "Yandex music next"
+    },
+    "vk_music_back": {
+        "description": "Vk music back"
+    },
+    "vk_music_play_stop": {
+        "description": "Vk music play stop"
+    },
+    "vk_music_next": {
+        "description": "Vk music next"
     }
   }
 }
